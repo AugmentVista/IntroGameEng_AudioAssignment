@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
-            //nextFire = Time.time + fireRate;
+            nextFire = Time.time + fireRate;
             GameObject bulletClone = Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
             bulletClone.transform.SetParent(bulletManager);
             sfxManager.PlayerShoot();            
