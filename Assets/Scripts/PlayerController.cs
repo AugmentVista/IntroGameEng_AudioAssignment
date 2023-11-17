@@ -115,8 +115,4 @@ public class PlayerController : MonoBehaviour
         sfxManager.PlayerExplosion();
         shipRenderer.sharedMaterial = material[0];
     }
-
-    
-
-
 }
